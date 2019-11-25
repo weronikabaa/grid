@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Example Title</title>
+    <meta name="description" content="Example description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6a331c31d1.js"></script>
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="css/dialog.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header_container">DanWagons operational dashboards</header>
+
+        <div class="country_pair australia">
+            <div>
+                <div><i class="fas fa-clock fa-3x fa-rotate-90"></i></div>
+                <div>Australia</div>
+            </div>
+            <div>
+                <div><i class="fas fa-cloud-sun fa-3x"></i></div>
+                <button type="button" class="broadcast_button" onclick="document.getElementById('modal_id').style.display='block';">Broadcast</button>
+            </div>
+        </div>
+        <div class="country_pair kenya">
+            <div>
+                <div><i class="fas fa-clock fa-3x fa-rotate-180"></i></div>
+                <div>Kenya</div>
+            </div>
+            <div>
+                <div><i class="fas fa-cloud-showers-heavy fa-3x"></i></div>
+                <button type="button" class="broadcast_button" onclick="document.getElementById('modal_id').style.display='block';">Broadcast</button>
+            </div>
+        </div>
+        <div class="country_pair thailand">
+            <div>
+                <div><i class="fas fa-clock fa-3x fa-rotate-270"></i></div>
+                <div>Thailand</div>
+            </div>
+            <div>
+                <div><i class="fas fa-cloud-moon fa-3x"></i></div>
+                <button type="button" class="broadcast_button" onclick="document.getElementById('modal_id').style.display='block';">Broadcast</button>
+            </div>
+        </div>
+
+        <div class="worldmap_container">
+            <img src="images/worldmap.png" class="image">
+        </div>
+
+        <div class="video_container">
+            <div>
+                <img src="images/video.png" class="video_image">
+            </div>
+            <div>
+                <img src="images/video.png" class="video_image">
+            </div>
+            <div>
+                <img src="images/video.png" class="video_image">
+            </div>
+        </div>
+
+        <div class="webstat_container">
+            <img src="images/webpage_visitors.png" style="image">
+        </div>
+
+        <div class="wagstat_container">
+            <img src="images/total_wagon_capacity.png" class="image">
+        </div>
+
+        <div class="facebook_container">
+            <img src="images/fb_news_feed.png" class="fb_image">
+        </div>
+
+        <div class="currency_container">
+            <img src="images/currency.png" class="cur_image">
+        </div>
+
+        <footer class="footer_container">11:23 local time</footer>
+    </div>
+    <!-- Dialog begins -->
+
+    <div id="modal_id" class="modal animate">
+        <div class="modal-content">
+            <span onclick="document.getElementById('modal_id').style.display = 'none'" class="close">&times;</span>
+            <br><br>
+            <h2>Broadcast to campsite</h2>
+            <br>
+            <form style="text-align: center">
+                <input type="text" placeholder="Subject" size="25"><br><br>
+                <textarea rows="20" cols="25">Message</textarea>
+                <br>
+                <button type="button" style="float: right;">Send</button>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- Dialog ends -->
+</body></html>

@@ -1,0 +1,64 @@
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay on top always */
+    z-index: 1;
+    /* Stay on top always */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full screen width */
+    height: 100%;
+    /* Full screen height */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 2% auto 15% auto;
+    padding: 25px;
+    border: 1px solid #888888;
+    width: 350px;
+    /* More or less, depending on content and screen size */
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, -0.8);
+}
+
+.close {
+    float: right;
+    margin-right: 10px;
+    color: #000000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 2% auto 15% auto;
+    padding: 25px;
+    border: 1px solid #888888;
+    width: 350px;
+    /* More or less, depending on content and screen size */
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, -0.8);
+}
+
+.animate {
+    animation: animatezoom 2s;
+    /* call animatezoom keyframes */
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}

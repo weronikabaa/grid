@@ -1,0 +1,24 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    /* border: 0 */
+    box-sizing: border-box;
+}
+
+.image {
+    max-width: 100%;
+}
+
+.country_pair {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.broadcast_button {
+    margin-top: 5px;
+}
